@@ -40,6 +40,9 @@ DOG FILE/
 *.tif
 *.tiff
 !assets/logo.png
+# Compressed, explicitly published demo derivatives only; originals stay private.
+!docs/media/*/*.jpg
+!docs/media/azra-example.mp4
 # Local design reference includes dog photos; do not publish it.
 reference/
 

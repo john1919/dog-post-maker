@@ -29,6 +29,20 @@ PHOTO_ROOT is the folder with one photo folder per dog (for example "Azra (Mira)
 
 69 automated tests: agent tool calling, missing-info questions, photo selection, crop safety, option variety, manual swaps, per-dog caption facts and rejection/retry, approval record, video checks and reading the foundation's photo folders.
 
+## Public demo
+
+Try https://john1919.github.io/dog-post-maker/ for a static demonstration of the
+volunteer page. It uses prepared, compressed photos and collage options. Swaps
+redraw in the browser; caption edits, names and demo approvals are never saved.
+Approval shows Azra's example video, rather than generating a new video.
+The demo makes no OpenAI calls and contains no API key or Python server.
+
+The published files are in `docs/`, served by GitHub Pages from `main /docs`.
+To refresh the public demo from prepared local input/output, run
+`uv run export_demo.py` (requires ffmpeg). This exports only the catalog dogs,
+strips image metadata, and checks that the demo stays under 50 MB. Original
+source files, local approvals and technical logs remain excluded from Git.
+
 ## How it connects
 
 - Dog facts: read from the Match app's dog list (app.py, DOGS), so both tools use the same dossier data.
