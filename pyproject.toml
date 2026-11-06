@@ -1,0 +1,25 @@
+[project]
+name = "dog-post-maker"
+version = "0.1.0"
+description = "Create adoption post artwork from rescue dog photos"
+readme = "README.md"
+authors = [
+    { name = "johnsu", email = "john.sunish@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pillow>=11.1",
+    "pyyaml>=6.0.2",
+    "pillow-heif>=0.22",
+    "openai>=3.45.0",
+    "python-dotenv>=1.2.4",
+    "pydantic>=2.14.2",
+    "moviepy>=2.2.1",
+]
+
+[project.scripts]
+dog-post-maker = "dog_post_maker:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"

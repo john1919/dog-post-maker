@@ -1,0 +1,51 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+# Local secrets and generated artwork
+.env
+.env.*
+!.env.example
+output/
+.DS_Store
+
+# Local dog data, media and archives (keep required design assets/fonts).
+input/
+photos/
+videos/
+DOG FILE/
+*.zip
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[pP][nN][gG]
+*.[hH][eE][iI][cC]
+*.[hH][eE][iI][fF]
+*.[mM][pP]4
+*.[mM][oO][vV]
+*.webm
+*.avi
+*.m4v
+*.gif
+*.webp
+*.avif
+*.bmp
+*.tif
+*.tiff
+!assets/logo.png
+# Local design reference includes dog photos; do not publish it.
+reference/
+
+# Local editor and test caches
+.vscode/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
